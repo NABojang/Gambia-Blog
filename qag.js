@@ -14,38 +14,70 @@ function startQuiz(){
 
 }
 // quiz questin
-
-var questions = [
+var quizQuestions = [
   {
-    Question1: "What is the capital Gambia?",
+    Question: "What is the capital of Gambia?",
     answers: {
       a: "Bakau",
       b: "Banjul",
       c: "Brikama",
       d: "Brusubi"},
       rightAnswer: 'b'
+  },
+  {
+    Question: "Which colour is not part of the Gambian flag",
+    answers: {
+      a: "Red",
+      b: "Green",
+      c: "Black",
+      d: "Blue"},
+      rightAnswer: 'c'
+  },
+  {
+    Question: "Select the Biggest town in the Gambia",
+    answers: {
+      a: "Bakau",
+      b: "Banjul",
+      c: "Brikama",
+      d: "Serrekunda"},
+      rightAnswer: 'd'
   }
  ];
 
- var quizLayout = document.getElementById('quizLayout');
- var  resultSection = document.getElementById('resultSection');
-  var nextQuestion = document.getElementById('nextQuestion');
 
-function displayQestion(question, quizLayout, resultSection, nextQuestion ){
+var questionsSection =document.getElementById('questions');
 
-  function showQuestions(question, quizLayout){
+var answersA = document.getElementById('answersA');
+var answersB = document.getElementById('answersB');
+var answersC = document.getElementById('answersC');
+var answersD = document.getElementById('answersD');
+var nextQuestion = document.getElementById('nextQuestion');
 
-    var output = []; // store the output choices
-    var answers;  // store the answer choices
+var i = 0;
+function displayQuiz() {
 
-    for (var i = 0; i < questions.length; i++) {
 
-      answers = [];
-      // to get acces to the objects in the array
-      for(x in question[i].answers){
-
-      }
-    }
-  }
+  questionsSection.innerHTML= quizQuestions[i].Question;
+  answersA.innerText = quizQuestions[i].answers.a;
+    answersB.innerText = quizQuestions[i].answers.b;
+    answersC.innerText = quizQuestions[i].answers.c;
+    answersD.innerText = quizQuestions[i].answers.d;
 
 }
+//
+displayQuiz();
+
+// when user clicks next for the next question to appear
+// need to check for correct answers
+nextQuestion.addEventListener("click", () =>{
+    i++;
+  if (i<quizQuestions.length) {
+
+    displayQuiz();
+  }
+  else {
+    document.getElementById('qs').innerHTML = "All done, below is your score";
+}
+
+
+})
