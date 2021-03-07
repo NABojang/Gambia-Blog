@@ -46,25 +46,46 @@
  </section>
 
 
-    <div id="quizLayout" class="quizLayout">
 
-    <p >Quiz time </p>
-      <label id="name" for="userName"> Name:</label>
-      <input type="text" id="userName" placeholder="Your Name">
-        <button id="register" onclick="addName()">Enter</button>
-            <p id="displayName"></p>
-      <br>
-      <button id="startButton"  onclick="startQuiz()" >Click to start</button>
-      <p id="message2"></p>
+<!-- layout of the page -->
 
-      <p id="q1" style="display:none;"> Question1: What is the capital Gambia?</p>
-      <button id="nextQuestion" style="display:none;">Next Question</button>
+       <p >Quiz time </p>
+     <label id="name" for="userName"> Name:</label>
+     <input type="text" id="userName" placeholder="Your Name">
+       <button id="register" onclick="addName()">Enter</button>
+           <p id="displayName"></p>
+     <br>
+     <button id="startButton"  onclick="startQuiz()" >Click to start</button>
+     <p id="message2"></p>
 
-        </div>
-        <div id="resultSection">
+     <div id="quizTime"class="quiz-Layout" style="display:none;">
+       <div id="qs"class="question-Layout">
+           <h2 style="text-align:center;" id="questions">Question</h2>
+           <br>
+         <ul >
+           <li>
+             <input id="a" type="radio" name="answers">
+             <label id="answersA" for="a">Question</label>
+           </li>
+           <li >
+               <input id="b"type="radio" name="answers">
+               <label  id="answersB" for="b">Question</label>
+           </li>
+           <li>
+             <input id="c"type="radio" name="answers">
+             <label id="answersC" for="c">Question</label>
+           </li>
+           <li>
+               <input id="d"type="radio" name="answers">
+               <label id="answersD" for="d">Question</label>
 
-        </div>
-        <button id="nextQuestion" name="button"></button>
+           </li>
+         </ul>
+
+       </div>
+       <button id="nextQuestion" class="btn btn-info" name="button" >Next</button>
+
+     </div>
 
       <script type="text/javascript" src="qag.js">
 
