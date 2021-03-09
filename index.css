@@ -97,4 +97,23 @@ margin: 10px;
 .arch .bakau{
   float: right;
   border-radius: 10px;
+
 }
+.quizLayout{
+border: black solid;
+  border-radius: 20%;
+  text-align: center;
+  width: 60%;
+  height: 70%;
+  position: absolute;
+  margin: 30px auto 30px auto;
+  margin-left: 20%;
+padding-left: 30px;
+}
+
+.btn {
+  margin-top: 5px;
+  margin-left: 40%;
+  margin-bottom: 5px;
+}
+
