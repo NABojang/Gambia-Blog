@@ -9,11 +9,10 @@ function startQuiz(){
     document.getElementById('startButton').style.display='none';
     document.getElementById('displayName').style.display='none';
     document.getElementById('name').style.display='none';
-      document.getElementById('q1').style.display='block';
-    document.getElementById('nextQuestion').style.display='block';
-
+    document.getElementById('quizTime').style.display='block'
 }
 // quiz questin
+
 var quizQuestions = [
   {
     Question: "What is the capital of Gambia?",
