@@ -21,6 +21,10 @@ h5{
   font-weight: bold;
   font-family: "Montserrat";
 }
+p {
+  font-family: sans-serif;
+  line-height: 2;
+}
 
 #title{
   color: #66BFBF;
@@ -51,75 +55,64 @@ margin-bottom: 150px;
   margin-top: 5px;
   font-size: 30px;
   font-weight: bold;
-
 }
-
-.img1{
-  border-radius: 25px;
-    width: 300px;
-  height: 200px;
-}
-.feature-box{
-  margin: 10px;
-}
-
-
 .img-1{
   border-radius: 5px ;
   float: left;
   margin-right: 30px;
   width: 25%;
-
 }
-.gambia{
-  margin-bottom: 5px;
+.img1{
+  border-radius: 25px;
+    width: 300px;
+  height: 200px;
 }
-
 .top-container{
-  width: 50%;
+  font-family: "Montserrat-black";
+  font-size: 1.0rem;
   text-align: left;
   line-height: 2;
-  margin: 50px auto 50px auto;
-}
-
-.mid-container{
+  margin: 30px auto 5px auto;
   width: 50%;
-  line-height: 2;
-  text-align: center;
-  margin-left: 25%;
 }
+.grid-image{
+  border-radius: 25px;
+  height: 250px;
+  width: 250px;
+}
+.feature-images{
+  text-align: center;
+  padding: 3%;
+}
+#culture{
+  background-color: #36384c;
+  color: #fff;
+  padding: 3% 15%;
+  text-align: center;
+}
+#places{
+  font-family: "Montserrat-black";
+  text-align: center;
+  padding: 3% 5%;
+  line-height: 1.5;
+font-size: 1.0rem;
 
-#vid{
-  left: 55%;
-}
-#intro, #ethnic{
-  text-align: center;
-}
-p {
-  font-family: sans-serif;
-  line-height: 2;
 }
 iframe{
   margin-left: 2%;
   border-radius: 5px;
 }
-.serr-k{
-margin: 10px;
-
+#footer{
+  background-color: #36384c;
+  text-align: center;
+  padding: 3%;
 }
-.sk, .briks, .tanji{
-  float: left;
-  margin-right: 5px;
-  border-radius: 10px;
-}
-.capital, .satagba, .sadim, .su{
+.fab-icons{
+  margin: 5px;
   display: inline-block;
-  margin: 10px;
 }
-.arch .bakau{
-  float: right;
-  border-radius: 10px;
-
+.footer-p{
+  font-family: "Ubuntu";
 }
 .quizLayout{
 border: black solid;
@@ -138,4 +131,3 @@ padding-left: 30px;
   margin-left: 40%;
   margin-bottom: 5px;
 }
-
